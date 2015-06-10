@@ -1,0 +1,127 @@
+I tested my files using a directory of directories and files.
+The directory tests included contains the following.
+
+directorys begin with "test"
+tests/testr : testa testb testc
+
+	testa: test1a file1
+
+		testa1: file3 file4
+
+	testb: file3 (different contents)
+	
+	testc: testc1 testc2
+		testc1: file6 file1 (different contents) file8
+		
+		testc2: (empty)
+
+Contents in each file:
+file1: Program bug Process object file fail bug program.
+file2: hash file& FAIL)( reTURN hAsh 2011
+file3: file pROgRam file 2011 bug node filE struct
+file4: linker compiler PARSER sTrucT
+file3(in testb): object Struct PARSER OBJECT STRUCT struct
+file6: files File fIle filEs foil filE fiLe
+file1(in testc1): linkeR compiLer linker bug file compiler Linker
+file8: return program parser retUrN paRser node FILE 2011
+
+I also tested using larger text files and the output was produced as expected. 
+Testing only on individual file also works.
+Expected output matches the actual output for tests directory.
+
+<list> 2011
+
+file3 1 file2 1 file8 1 
+
+</list>
+
+<list> bug
+
+file1 2 file3 1 file1 1 
+
+</list>
+
+<list> compiler
+
+file1 2 file4 1 
+
+</list>
+
+<list> fail
+
+file1 1 file2 1 
+
+</list>
+
+<list> file
+
+file6 4 file3 3 file2 1 file8 1 file1 1 
+file1 1 
+
+</list>
+
+<list> files
+
+file6 2 
+
+</list>
+
+<list> foil
+
+file6 1 
+
+</list>
+
+<list> hash
+
+file2 2 
+
+</list>
+
+<list> linker
+
+file1 3 file4 1 
+
+</list>
+
+<list> node
+
+file3 1 file8 1 
+
+</list>
+
+<list> object
+
+file3 2 file1 1 
+
+</list>
+
+<list> parser
+
+file8 2 file4 1 file3 1 
+
+</list>
+
+<list> process
+
+file1 1 
+
+</list>
+
+<list> program
+
+file1 2 file3 1 file8 1 
+
+</list>
+
+<list> return
+
+file8 2 file2 1 
+
+</list>
+
+<list> struct
+
+file3 3 file4 1 file3 1 
+
+</list>

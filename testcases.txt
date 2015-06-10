@@ -1,0 +1,108 @@
+1 - nonexistent index file
+
+input: search randomfile.txt 
+ouput: prints a message, exits
+
+2 - invalid format
+
+input: search hw4-testcases.txt 
+ouput: prints a message, exits
+
+tested using directories and files within "tests" directory 
+from PA3 which produced an ouput file 
+
+3 - search option: q
+
+input: q
+output: none, exits
+
+search option: sa
+
+	multiple terms
+4 - file contains all terms
+
+input: sa file files foil
+ouput: tests/testr/testc/testc1/file6
+
+5 - no files contain terms
+
+input: sa bug compile node hash
+output: No files have all of these terms.
+
+	some files
+6 - file removed from front
+
+input: sa return hash
+output: tests/testr/testa/file2
+
+
+7 - file removed from middle
+
+input: sa 2011 node
+output: tests/testr/testa/testa1/file3
+		tests/testr/testc/testc1/file8
+
+8 - file removed from end
+
+input: sa return parser
+output: tests/testr/testc/testc1/file8
+
+
+9 - none removed
+
+input: sa file files foil
+output: tests/testr/testc/testc1/file6
+
+
+	single term
+10 - file contains term
+
+input: so 2011
+output: tests/testr/testa/testa1/file3
+		tests/testr/testa/file2
+		tests/testr/testc/testc1/file8
+
+11 - file does not contain term
+
+input: sa nonexistent
+output: No files have all of these terms.
+
+
+search option: so
+
+	multiple terms
+12 - all files contain terms
+input: so files foil
+output: tests/testr/testc/testc1/file6
+
+
+
+13 - no files contain terms
+
+input: so nonexistent nonexistent2
+output: No files have any of these terms or there are no terms.
+
+14 - some files contain terms
+
+input: so 2011 bug compiler fail file
+output: tests/testr/testa/testa1/file3
+		tests/testr/testa/file2
+		tests/testr/testc/testc1/file8
+		tests/file1
+		tests/testr/testc/testc1/file1
+		tests/testr/testa/testa1/file4
+		tests/testr/testc/testc1/file6
+
+	single term
+15 - file contains term
+
+input: so 2011
+output: tests/testr/testa/testa1/file3
+		tests/testr/testa/file2
+		tests/testr/testc/testc1/file8
+
+16 - file does not contain term
+
+input: so nonexistent
+output: No files have any of these terms or there are no terms.
+
